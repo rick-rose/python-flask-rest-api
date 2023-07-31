@@ -1,0 +1,8 @@
+INSERT INTO "goal"
+    ("created_on", "modified_on", "id",  "name")
+VALUES
+    (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 1, 'Strength'),
+    (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 2, 'Power'),
+    (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 3, 'Mass'),
+    (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 4, 'Endurance'),
+    (CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 5, 'Total');
