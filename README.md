@@ -1,9 +1,17 @@
 # Python Flask REST API
 
 ## Description
-This is a RESTful API made in Python and the Flask framework.
+This is a RESTful API made in Python and the Flask framework with PostgreSQL.
 
-## Install Local
+## Technologies
++ Python
++ Flask
++ Flask-SQLAlchemy
++ Flast-JWT-Extended
++ Flask-Marshmallow
++ PostgreSQL
+  
+## Install Locally
 1. Start PostgreSQL in Docker
   ```
   docker run --name postgres1 -p 5001:5432 -e POSTGRES_PASSWORD=idiot -d postgres
@@ -31,7 +39,25 @@ This is a RESTful API made in Python and the Flask framework.
   export FLASK_ENV=development
   ```
 
-6. See commands below for running
+6. Create the database tables
+  ```
+  flask install_db
+  ```
+
+7. Populate the database tables
+  ```
+  flask seed_db
+  ```
+
+8. Create a user (follow the prompts)
+  ```
+  flask create_user
+  ```
+
+9. Run the API
+  ```
+  flask create_user
+  ```
 
 ### Commands
 | Command | Prompts | Description |
@@ -46,7 +72,7 @@ This is a RESTful API made in Python and the Flask framework.
 | Endpoint| Method | Description |
 | ------- | ------- | ---------- |
 | v1/health | GET | returns a status check |
-| v1/login | GET | obtain an API authentication token |
+| v1/login | POST | obtain an API authentication token |
 | v1/exercises | GET | list of exercises |
 | v1/exercises/{id} | GET | an exercise |
 | v1/goals | GET | list of goals |
