@@ -9,6 +9,7 @@ This is a RESTful API made in Python and the Flask framework with PostgreSQL.
 + Flask-SQLAlchemy
 + Flast-JWT-Extended
 + Flask-Marshmallow
++ SQLAlchemy
 + PostgreSQL
   
 ## Install Locally
